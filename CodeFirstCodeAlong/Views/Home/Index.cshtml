@@ -1,0 +1,8 @@
+﻿@using CodeFirstCodeAlong.Context
+@model IEnumerable<Movie>
+
+@foreach(Movie m in Model)
+{
+    <p>@m.Title</p>
+    <p>Run Time: @m.Runtime minutes</p>
+}
